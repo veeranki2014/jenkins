@@ -3,11 +3,16 @@ pipeline {
         node { label 'workstation' }
     }
     stages {
-        stage ('one'){
+        stage ('ONE'){
             steps{
-            sh 'echo world - workstation'
+            sh 'echo world - workstation-1'
             }
         }
+        stage ('TWO'){
+                    steps{
+                    sh 'echo world - workstation -2'
+                    }
+                }
     }
 
 }
