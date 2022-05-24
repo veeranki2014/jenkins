@@ -4,7 +4,8 @@ pipeline {
         //label 'JAVA'
         none
     } */
-    agent none
+    //agent none - doesn't work with post.so enable "agent any"
+    agent any
     stages {
         stage ('ONE'){
            agent{
