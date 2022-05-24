@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('ONE'){
             steps{
-            sh ' world - workstation-1'
+            sh 'echo world - workstation-1'
             }
         }
         stage ('TWO'){
