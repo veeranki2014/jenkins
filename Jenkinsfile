@@ -24,4 +24,10 @@ pipeline {
                 }
     }
 
+    post {
+        always{
+        sh 'echo Post Steps'
+        }
+    }
+
 }
