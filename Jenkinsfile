@@ -1,9 +1,12 @@
+/*
 pipeline {
-    /* agent {
+     */
+/* agent {
         //node { label 'workstation' }
         //label 'JAVA'
         none
-    } */
+    } *//*
+
     //agent none - doesn't work with post.so enable "agent any"
     agent any
     stages {
@@ -28,6 +31,22 @@ pipeline {
     post {
         always{
         sh 'echo Post Steps'
+        }
+    }
+
+} */
+
+pipeline{
+    agent any
+    environment {
+        DEMO_URL = google.com
+    }
+
+    stages{
+        stage ('ANKA'){
+          steps {
+            sh 'echo ${DEMO_URL}'
+          }
         }
     }
 
