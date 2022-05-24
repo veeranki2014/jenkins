@@ -1,11 +1,12 @@
 pipeline {
     agent {
-        node { label 'workstation' }
+        //node { label 'workstation' }
+        label 'JAVA'
     }
     stages {
         stage ('ONE'){
             steps{
-            sh 'echo world - workstation-1'
+            sh ' world - workstation-1'
             }
         }
         stage ('TWO'){
