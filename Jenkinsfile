@@ -39,7 +39,7 @@ pipeline {
 pipeline{
     agent any
     environment {
-        DEMO_URL = google.com
+        DEMO_URL = "google.com"
     }
 
     stages{
