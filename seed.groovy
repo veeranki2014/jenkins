@@ -14,3 +14,4 @@ freeStyleJob('example') {
         archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')
     }
 }
+##
